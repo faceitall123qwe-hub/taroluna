@@ -1,0 +1,192 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "back": "Back",
+    "close": "Close",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "auth": {
+    "welcome": "Welcome to TaroLuna",
+    "tagline": "Discover your path through the cards",
+    "signIn": "Sign In",
+    "signUp": "Create Account",
+    "continueAsGuest": "Continue as Guest",
+    "email": "Email",
+    "password": "Password",
+    "displayName": "Your name",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "orContinueWith": "or continue with",
+    "signInWithGoogle": "Continue with Google",
+    "signInWithApple": "Continue with Apple",
+    "errors": {
+      "invalidEmail": "Invalid email address",
+      "wrongPassword": "Incorrect password",
+      "emailTaken": "Email already in use",
+      "weakPassword": "Password must be at least 6 characters"
+    }
+  },
+  "home": {
+    "greeting_morning": "Good morning, {{name}}",
+    "greeting_afternoon": "Good afternoon, {{name}}",
+    "greeting_evening": "Good evening, {{name}}",
+    "cardOfTheDay": "Card of the Day",
+    "tapToReveal": "Tap to reveal",
+    "chooseSpread": "Choose Your Spread",
+    "recentReadings": "Recent Readings",
+    "noReadings": "No readings yet",
+    "upgradePrompt": "Upgrade for unlimited readings",
+    "freeReadingsLeft_one": "{{count}} free reading left",
+    "freeReadingsLeft_other": "{{count}} free readings left"
+  },
+  "reading": {
+    "setIntention": "Set Your Intention",
+    "intentionPlaceholder": "What question or situation do you seek guidance on?",
+    "shuffleCards": "Shuffle the Cards",
+    "tapToSelect": "Tap a card to select it",
+    "seeReading": "See Your Reading",
+    "saveReading": "Save Reading",
+    "newReading": "New Reading",
+    "share": "Share",
+    "reversed": "Reversed",
+    "upright": "Upright",
+    "position": "Position {{number}}",
+    "readingSaved": "Reading saved",
+    "deleteReading": "Delete Reading",
+    "deleteConfirm": "Are you sure you want to delete this reading?",
+    "spreads": {
+      "card_of_the_day": "Card of the Day",
+      "three_card": "Past · Present · Future",
+      "mind_body_spirit": "Mind · Body · Spirit",
+      "celtic_cross": "Celtic Cross",
+      "yes_no": "Yes or No",
+      "shadow_self": "Shadow Self",
+      "career_path": "Career Path",
+      "relationship_dynamics": "Relationship Dynamics",
+      "monthly_forecast": "Monthly Forecast"
+    },
+    "spreadDescriptions": {
+      "card_of_the_day": "Daily guidance in a single card",
+      "three_card": "Explore your past, present, and future",
+      "mind_body_spirit": "Balance across all aspects of life",
+      "celtic_cross": "Deep insight into any situation",
+      "yes_no": "One card — a direct answer to your question",
+      "shadow_self": "What you hide, why, and how to integrate it",
+      "career_path": "Situation, obstacle, opportunity and outcome",
+      "relationship_dynamics": "A two-person energy analysis across 5 cards",
+      "monthly_forecast": "Four cards, one for each week of the month"
+    }
+  },
+  "card": {
+    "majorArcana": "Major Arcana",
+    "minorArcana": "Minor Arcana",
+    "element": "Element",
+    "zodiac": "Zodiac",
+    "planet": "Planet",
+    "keywords": "Keywords",
+    "meaning": "Meaning",
+    "love": "Love",
+    "career": "Career",
+    "health": "Health",
+    "uprightMeaning": "Upright",
+    "reversedMeaning": "Reversed"
+  },
+  "history": {
+    "title": "Reading History",
+    "empty": "Your reading history is empty",
+    "emptySubtitle": "Start your first reading to see it here"
+  },
+  "profile": {
+    "title": "Profile",
+    "language": "Language",
+    "subscription": "Subscription",
+    "subscribed": "TaroLuna Premium",
+    "notSubscribed": "Free Account",
+    "signOut": "Sign Out",
+    "signOutConfirm": "Are you sure you want to sign out?",
+    "readingsCount": "Total Readings: {{count}}",
+    "version": "Version {{version}}"
+  },
+  "notifications": {
+    "dailyCard": "Your card of the day is ready",
+    "dailyCardBody": "Tap to reveal your guidance for today",
+    "enabled": "Daily card reminder",
+    "permissionDenied": "Enable notifications in Settings to receive your daily card"
+  },
+  "nav": {
+    "home": "Home",
+    "spread": "Spread",
+    "history": "History",
+    "profile": "Profile"
+  },
+  "zodiac": {
+    "title": "Zodiac Forecast",
+    "selectSign": "Select your zodiac sign →",
+    "changeSign": "Change ›",
+    "today": "Today",
+    "week": "Week",
+    "month": "Month",
+    "year": "Year",
+    "cardLabel_day": "TODAY'S CARD FOR {{sign}}",
+    "cardLabel_week": "THIS WEEK'S CARD FOR {{sign}}",
+    "cardLabel_month": "THIS MONTH'S CARD FOR {{sign}}",
+    "cardLabel_year": "THIS YEAR'S CARD FOR {{sign}}",
+    "areasOfLife": "AREAS OF LIFE",
+    "yourSign": "YOUR SIGN",
+    "love": "Love",
+    "career": "Career",
+    "finance": "Finance",
+    "health": "Health",
+    "chooseSign": "Choose Your Sign",
+    "emptyState": "Select your sign above to see your forecast",
+    "cancel": "Cancel",
+    "reversed": "Reversed",
+    "upright": "Upright",
+    "signs": {
+      "aries": "Aries",
+      "taurus": "Taurus",
+      "gemini": "Gemini",
+      "cancer": "Cancer",
+      "leo": "Leo",
+      "virgo": "Virgo",
+      "libra": "Libra",
+      "scorpio": "Scorpio",
+      "sagittarius": "Sagittarius",
+      "capricorn": "Capricorn",
+      "aquarius": "Aquarius",
+      "pisces": "Pisces"
+    }
+  },
+  "spread": {
+    "card": "card",
+    "cards": "cards"
+  },
+  "settings": {
+    "title": "SETTINGS"
+  },
+  "paywall": {
+    "title": "Unlock TaroLuna",
+    "feature1": "Unlimited readings",
+    "feature2": "Celtic Cross spread",
+    "feature3": "Full reading history",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "perMonth": "/month",
+    "perYear": "/year",
+    "oneTime": "one-time",
+    "bestValue": "BEST VALUE",
+    "save40": "Save 40%",
+    "continue": "Continue",
+    "restore": "Restore Purchases",
+    "legalText": "Auto-renews. Cancel anytime in App Store settings.",
+    "alreadySubscribed": "Already subscribed? Restore"
+  }
+}

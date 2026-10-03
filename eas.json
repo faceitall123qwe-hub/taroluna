@@ -1,0 +1,34 @@
+{
+  "cli": {
+    "version": ">= 7.0.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_RC_ANDROID_KEY": "test_WnAbZhaHEtpraeTShyKOnkAvbfr",
+        "EXPO_PUBLIC_RC_IOS_KEY": "placeholder"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_RC_ANDROID_KEY": "test_WnAbZhaHEtpraeTShyKOnkAvbfr",
+        "EXPO_PUBLIC_RC_IOS_KEY": "placeholder"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_RC_ANDROID_KEY": "test_WnAbZhaHEtpraeTShyKOnkAvbfr",
+        "EXPO_PUBLIC_RC_IOS_KEY": "placeholder"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

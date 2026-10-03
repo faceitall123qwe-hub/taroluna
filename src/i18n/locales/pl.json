@@ -1,0 +1,192 @@
+{
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Coś poszło nie tak",
+    "retry": "Spróbuj ponownie",
+    "cancel": "Anuluj",
+    "save": "Zapisz",
+    "delete": "Usuń",
+    "back": "Wstecz",
+    "close": "Zamknij",
+    "confirm": "Potwierdź",
+    "yes": "Tak",
+    "no": "Nie"
+  },
+  "auth": {
+    "welcome": "Witaj w TaroLuna",
+    "tagline": "Odkryj swoją ścieżkę przez karty",
+    "signIn": "Zaloguj się",
+    "signUp": "Utwórz konto",
+    "continueAsGuest": "Kontynuuj jako gość",
+    "email": "E-mail",
+    "password": "Hasło",
+    "displayName": "Twoje imię",
+    "forgotPassword": "Zapomniałeś hasła?",
+    "noAccount": "Nie masz konta?",
+    "hasAccount": "Masz już konto?",
+    "orContinueWith": "lub kontynuuj przez",
+    "signInWithGoogle": "Kontynuuj przez Google",
+    "signInWithApple": "Kontynuuj przez Apple",
+    "errors": {
+      "invalidEmail": "Nieprawidłowy adres e-mail",
+      "wrongPassword": "Błędne hasło",
+      "emailTaken": "Ten adres e-mail jest już zajęty",
+      "weakPassword": "Hasło musi mieć co najmniej 6 znaków"
+    }
+  },
+  "home": {
+    "greeting_morning": "Dzień dobry, {{name}}",
+    "greeting_afternoon": "Dzień dobry, {{name}}",
+    "greeting_evening": "Dobry wieczór, {{name}}",
+    "cardOfTheDay": "Karta dnia",
+    "tapToReveal": "Dotknij, aby odkryć",
+    "chooseSpread": "Wybierz układ",
+    "recentReadings": "Ostatnie odczyty",
+    "noReadings": "Brak odczytów",
+    "upgradePrompt": "Przejdź na premium po nieograniczone odczyty",
+    "freeReadingsLeft_one": "Pozostał {{count}} bezpłatny odczyt",
+    "freeReadingsLeft_other": "Pozostało {{count}} bezpłatnych odczytów"
+  },
+  "reading": {
+    "setIntention": "Wyraź swój zamiar",
+    "intentionPlaceholder": "W jakiej sprawie lub sytuacji szukasz wskazówek?",
+    "shuffleCards": "Przetasuj karty",
+    "tapToSelect": "Dotknij kartę, aby ją wybrać",
+    "seeReading": "Zobacz swój odczyt",
+    "saveReading": "Zapisz odczyt",
+    "newReading": "Nowy odczyt",
+    "share": "Udostępnij",
+    "reversed": "Odwrócona",
+    "upright": "Prosta",
+    "position": "Pozycja {{number}}",
+    "readingSaved": "Odczyt zapisany",
+    "deleteReading": "Usuń odczyt",
+    "deleteConfirm": "Czy na pewno chcesz usunąć ten odczyt?",
+    "spreads": {
+      "card_of_the_day": "Karta dnia",
+      "three_card": "Przeszłość · Teraźniejszość · Przyszłość",
+      "mind_body_spirit": "Umysł · Ciało · Duch",
+      "celtic_cross": "Celtycki krzyż",
+      "yes_no": "Tak lub Nie",
+      "shadow_self": "Cień Ja",
+      "career_path": "Ścieżka kariery",
+      "relationship_dynamics": "Dynamika związku",
+      "monthly_forecast": "Prognoza miesięczna"
+    },
+    "spreadDescriptions": {
+      "card_of_the_day": "Codzienne wskazówki w jednej karcie",
+      "three_card": "Zbadaj swoją przeszłość, teraźniejszość i przyszłość",
+      "mind_body_spirit": "Równowaga we wszystkich aspektach życia",
+      "celtic_cross": "Głęboki wgląd w dowolną sytuację",
+      "yes_no": "Jedna karta — bezpośrednia odpowiedź na twoje pytanie",
+      "shadow_self": "Co ukrywasz, dlaczego i jak to zaakceptować",
+      "career_path": "Sytuacja, przeszkoda, szansa i wynik",
+      "relationship_dynamics": "Analiza energii związku z obu stron",
+      "monthly_forecast": "Cztery karty — po jednej na każdy tydzień miesiąca"
+    }
+  },
+  "card": {
+    "majorArcana": "Wielkie Arkana",
+    "minorArcana": "Małe Arkana",
+    "element": "Żywioł",
+    "zodiac": "Zodiak",
+    "planet": "Planeta",
+    "keywords": "Słowa kluczowe",
+    "meaning": "Znaczenie",
+    "love": "Miłość",
+    "career": "Kariera",
+    "health": "Zdrowie",
+    "uprightMeaning": "Prosta",
+    "reversedMeaning": "Odwrócona"
+  },
+  "history": {
+    "title": "Historia odczytów",
+    "empty": "Twoja historia odczytów jest pusta",
+    "emptySubtitle": "Rozpocznij swój pierwszy odczyt, aby go tutaj zobaczyć"
+  },
+  "profile": {
+    "title": "Profil",
+    "language": "Język",
+    "subscription": "Subskrypcja",
+    "subscribed": "TaroLuna Premium",
+    "notSubscribed": "Konto bezpłatne",
+    "signOut": "Wyloguj się",
+    "signOutConfirm": "Czy na pewno chcesz się wylogować?",
+    "readingsCount": "Łączna liczba odczytów: {{count}}",
+    "version": "Wersja {{version}}"
+  },
+  "notifications": {
+    "dailyCard": "Twoja karta dnia jest gotowa",
+    "dailyCardBody": "Dotknij, aby odkryć swoje wskazówki na dziś",
+    "enabled": "Przypomnienie o karcie dnia",
+    "permissionDenied": "Włącz powiadomienia w Ustawieniach, aby otrzymywać kartę dnia"
+  },
+  "nav": {
+    "home": "Główna",
+    "spread": "Układy",
+    "history": "Historia",
+    "profile": "Profil"
+  },
+  "zodiac": {
+    "title": "Prognoza zodiakalna",
+    "selectSign": "Wybierz swój znak zodiaku →",
+    "changeSign": "Zmień ›",
+    "today": "Dziś",
+    "week": "Tydzień",
+    "month": "Miesiąc",
+    "year": "Rok",
+    "cardLabel_day": "KARTA DNIA DLA {{sign}}",
+    "cardLabel_week": "KARTA TYGODNIA DLA {{sign}}",
+    "cardLabel_month": "KARTA MIESIĄCA DLA {{sign}}",
+    "cardLabel_year": "KARTA ROKU DLA {{sign}}",
+    "areasOfLife": "OBSZARY ŻYCIA",
+    "yourSign": "TWÓJ ZNAK",
+    "love": "Miłość",
+    "career": "Kariera",
+    "finance": "Finanse",
+    "health": "Zdrowie",
+    "chooseSign": "Wybierz swój znak",
+    "emptyState": "Wybierz znak powyżej, aby zobaczyć prognozę",
+    "cancel": "Anuluj",
+    "reversed": "Odwrócona",
+    "upright": "Prosta",
+    "signs": {
+      "aries": "Baran",
+      "taurus": "Byk",
+      "gemini": "Bliźnięta",
+      "cancer": "Rak",
+      "leo": "Lew",
+      "virgo": "Panna",
+      "libra": "Waga",
+      "scorpio": "Skorpion",
+      "sagittarius": "Strzelec",
+      "capricorn": "Koziorożec",
+      "aquarius": "Wodnik",
+      "pisces": "Ryby"
+    }
+  },
+  "spread": {
+    "card": "karta",
+    "cards": "karty"
+  },
+  "settings": {
+    "title": "USTAWIENIA"
+  },
+  "paywall": {
+    "title": "Odblokuj TaroLuna",
+    "feature1": "Nieograniczone odczyty",
+    "feature2": "Układ Celtycki krzyż",
+    "feature3": "Pełna historia odczytów",
+    "monthly": "Miesięcznie",
+    "annual": "Rocznie",
+    "perMonth": "/miesiąc",
+    "perYear": "/rok",
+    "oneTime": "jednorazowo",
+    "bestValue": "NAJLEPSZA OFERTA",
+    "save40": "Oszczędź 40%",
+    "continue": "Kontynuuj",
+    "restore": "Przywróć zakupy",
+    "legalText": "Odnawia się automatycznie. Anuluj w dowolnym momencie w ustawieniach App Store.",
+    "alreadySubscribed": "Masz już subskrypcję? Przywróć"
+  }
+}
