@@ -16,9 +16,6 @@ function getMap(language: string): Record<number, CardTranslation> | null {
     } else if (language === 'uk') {
       // eslint-disable-next-line @typescript-eslint/no-var-requires
       cache.uk = require('../data/translations/cards_content_uk').cardContentUk;
-    } else if (language === 'pl') {
-      // eslint-disable-next-line @typescript-eslint/no-var-requires
-      cache.pl = require('../data/translations/cards_content_pl').cardContentPl;
     } else {
       cache[language] = undefined;
     }
