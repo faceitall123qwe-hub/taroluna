@@ -1,7 +1,6 @@
 # Security Review — TaroLuna
 
 **Date:** 2026-05-16
-**Reviewer:** Automated security audit agent
 **Stack:** React Native + Expo + TypeScript + Supabase + RevenueCat
 
 ---
