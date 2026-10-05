@@ -14,6 +14,7 @@ export interface Profile {
   display_name: string | null;
   language: string;
   readings_count: number;
+  paid_readings: number;
   is_subscribed: boolean;
   push_token: string | null;
   notifications_enabled: boolean;

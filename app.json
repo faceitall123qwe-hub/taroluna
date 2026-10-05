@@ -6,11 +6,6 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#1A0A2E"
-    },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -40,7 +35,16 @@
           "color": "#7B2FBE"
         }
       ],
-      "expo-apple-authentication"
+      "expo-apple-authentication",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#1A0A2E",
+          "imageWidth": 200
+        }
+      ]
     ],
     "scheme": "taroluna",
     "extra": {

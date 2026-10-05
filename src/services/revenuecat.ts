@@ -63,15 +63,8 @@ export async function getOfferings(): Promise<PurchasesPackage[]> {
 
 export async function purchasePackage(_pkg: PurchasesPackage): Promise<boolean> {
   const P = await getPurchases();
-  if (!P || !(RC_ANDROID_KEY || RC_IOS_KEY)) {
-    // Mock: update Supabase directly for testing
-    try {
-      const { supabase } = await import('./supabase');
-      const { data: { user } } = await supabase.auth.getUser();
-      if (user) await supabase.from('profiles').update({ is_subscribed: true } as never).eq('id', user.id);
-    } catch {}
-    return true;
-  }
+  // Without RevenueCat keys nothing can be bought; billing state is written only by the webhook.
+  if (!P || !(RC_ANDROID_KEY || RC_IOS_KEY)) return false;
   try {
     // Find the real package from RevenueCat offerings
     const offerings = await P.getOfferings();

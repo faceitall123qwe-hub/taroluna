@@ -115,7 +115,10 @@
     "signOut": "Выйти",
     "signOutConfirm": "Ты уверен, что хочешь выйти?",
     "readingsCount": "Всего раскладов: {{count}}",
-    "version": "Версия {{version}}"
+    "version": "Версия {{version}}",
+    "deleteAccount": "Удалить аккаунт",
+    "deleteAccountConfirm": "Аккаунт и история раскладов будут удалены навсегда. Активную подписку нужно отменить отдельно в Google Play или App Store.",
+    "deleteAccountFailed": "Не удалось удалить аккаунт. Попробуй позже."
   },
   "notifications": {
     "dailyCard": "Ваша карта дня готова",

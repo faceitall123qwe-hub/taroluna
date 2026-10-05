@@ -186,7 +186,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background.primary,
   },
   fill: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
   },
   scroll: {
     flexGrow: 1,

@@ -39,12 +39,18 @@ export function usePurchases() {
     return () => { cancelled = true; };
   }, []);
 
-  // After a RevenueCat purchase or restore, re-fetch the profile from Supabase
-  // so subscription status reflects the server-side state (updated by webhook).
+  // Billing state is written by the RevenueCat webhook, which lands a few seconds after the
+  // purchase, so poll the profile until it changes.
   const syncProfileFromServer = useCallback(async () => {
     const user = await getCurrentUser();
     if (!user) return;
-    const profile = await getUserProfile(user.id);
+    const before = await getUserProfile(user.id);
+    let profile = before;
+    for (let i = 0; i < 8; i++) {
+      if (profile?.is_subscribed || (profile?.paid_readings ?? 0) > (before?.paid_readings ?? 0)) break;
+      await new Promise((r) => setTimeout(r, 1500));
+      profile = await getUserProfile(user.id);
+    }
     setProfile(profile);
     setIsSubscribed(profile?.is_subscribed ?? false);
   }, [setProfile]);

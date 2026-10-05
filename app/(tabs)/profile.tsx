@@ -16,6 +16,7 @@ import { NotificationToggle } from '../../src/components/profile/NotificationTog
 import { useAuth } from '../../src/hooks/useAuth';
 import { usePurchases } from '../../src/hooks/usePurchases';
 import { useStore } from '../../src/store/useStore';
+import { supabase } from '../../src/services/supabase';
 import { colors, spacing, borderRadius, typography } from '../../src/theme';
 import i18n from '../../src/i18n';
 import { useTranslation } from 'react-i18next';
@@ -50,6 +51,25 @@ export default function ProfileScreen() {
         text: 'Sign Out',
         style: 'destructive',
         onPress: async () => {
+          await signOut();
+          router.replace('/auth');
+        },
+      },
+    ]);
+  }
+
+  function handleDeleteAccount() {
+    Alert.alert(t('profile.deleteAccount'), t('profile.deleteAccountConfirm'), [
+      { text: t('common.cancel'), style: 'cancel' },
+      {
+        text: t('common.delete'),
+        style: 'destructive',
+        onPress: async () => {
+          const { error } = await supabase.rpc('delete_own_account');
+          if (error) {
+            Alert.alert(t('common.error'), t('profile.deleteAccountFailed'));
+            return;
+          }
           await signOut();
           router.replace('/auth');
         },
@@ -146,6 +166,9 @@ export default function ProfileScreen() {
             size="md"
             loading={isLoading}
           />
+          <TouchableOpacity onPress={handleDeleteAccount} style={styles.deleteRow}>
+            <Text style={styles.deleteText}>{t('profile.deleteAccount')}</Text>
+          </TouchableOpacity>
         </View>
 
         <Text style={styles.version}>{t('profile.version', { version: appVersion })}</Text>
@@ -176,6 +199,15 @@ const styles = StyleSheet.create({
   },
   section: {
     gap: spacing.sm,
+  },
+  deleteRow: {
+    alignSelf: 'center',
+    paddingVertical: spacing.sm,
+  },
+  deleteText: {
+    ...typography.caption,
+    color: colors.text.muted,
+    textDecorationLine: 'underline',
   },
   sectionLabel: {
     ...typography.label,
