@@ -31,7 +31,6 @@ yarn-error.log*
 Thumbs.db
 
 # Local tooling / scratch
-.claude/
 supabase/.temp/
 build_output.log
 instrucntions.md
