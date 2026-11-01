@@ -4,11 +4,12 @@ Tarot App — Visual Design Reference Mockups
 """
 
 import math
+import os
 import random
 from PIL import Image, ImageDraw, ImageFont
 
-FONTS_DIR = r"C:\Users\hp\.claude\skills\canvas-design\canvas-fonts"
-OUT_DIR = r"C:\Users\hp\Desktop\Claude Projects\taroapp\design-references"
+FONTS_DIR = os.environ.get("FONTS_DIR", os.path.join(os.path.dirname(__file__), "fonts"))
+OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 W, H = 375, 812
 
 

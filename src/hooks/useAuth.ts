@@ -11,7 +11,7 @@ export function useAuth() {
   // canRead is a client-side hint only (used for UI state like showing the paywall button).
   // The authoritative gate is the canUserRead() RPC called server-side in the reading screen.
   const canRead = user != null
-    ? (profile?.is_subscribed ?? false) || (profile?.readings_count ?? 0) < 3
+    ? (profile?.is_subscribed ?? false) || (profile?.readings_count ?? 0) < 3 + (profile?.paid_readings ?? 0)
     : false;
 
   const signOut = useCallback(async () => {

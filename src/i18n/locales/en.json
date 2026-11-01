@@ -113,7 +113,10 @@
     "signOut": "Sign Out",
     "signOutConfirm": "Are you sure you want to sign out?",
     "readingsCount": "Total Readings: {{count}}",
-    "version": "Version {{version}}"
+    "version": "Version {{version}}",
+    "deleteAccount": "Delete account",
+    "deleteAccountConfirm": "This permanently deletes your account and reading history. Active subscriptions must be cancelled separately in Google Play or the App Store.",
+    "deleteAccountFailed": "Could not delete the account. Try again later."
   },
   "notifications": {
     "dailyCard": "Your card of the day is ready",

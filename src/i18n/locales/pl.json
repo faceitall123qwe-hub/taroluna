@@ -113,7 +113,10 @@
     "signOut": "Wyloguj się",
     "signOutConfirm": "Czy na pewno chcesz się wylogować?",
     "readingsCount": "Łączna liczba odczytów: {{count}}",
-    "version": "Wersja {{version}}"
+    "version": "Wersja {{version}}",
+    "deleteAccount": "Usuń konto",
+    "deleteAccountConfirm": "Konto i historia rozkładów zostaną trwale usunięte. Aktywną subskrypcję anuluj osobno w Google Play lub App Store.",
+    "deleteAccountFailed": "Nie udało się usunąć konta. Spróbuj później."
   },
   "notifications": {
     "dailyCard": "Twoja karta dnia jest gotowa",

@@ -4,7 +4,8 @@ import { supabase } from './supabase';
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
-    shouldShowAlert: true,
+    shouldShowBanner: true,
+    shouldShowList: true,
     shouldPlaySound: false,
     shouldSetBadge: false,
   }),
@@ -67,9 +68,9 @@ export async function scheduleDailyCardNotification(language: string): Promise<v
     identifier: NOTIFICATION_ID,
     content: { title, body, data: { screen: '/(tabs)' } },
     trigger: {
+      type: Notifications.SchedulableTriggerInputTypes.DAILY,
       hour: 9,
       minute: 0,
-      repeats: true,
     },
   });
 }
